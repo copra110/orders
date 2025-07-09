@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: orders
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    com.barkah.orders: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
